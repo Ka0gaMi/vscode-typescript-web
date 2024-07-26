@@ -16,19 +16,14 @@ export async function activate(context: vscode.ExtensionContext) {
 	const configs = getConfigs();
 	const serverMain = vscode.Uri.joinPath(context.extensionUri, 'dist/server.js');
 	const worker = new Worker(serverMain.toString());
-	const documentSelector: lsp.DocumentSelector = [
-		'typescript',
-		'typescriptreact',
-		'javascript',
-		'javascriptreact',
-	];
+	const documentSelector: lsp.DocumentSelector = [];
 	if (configs.supportVue) documentSelector.push('vue');
 
 	const clientOptions: lsp.LanguageClientOptions = {
 		documentSelector,
 		initializationOptions: {
 			typescript: {
-				tsdkUrl: 'https://cdn.jsdelivr.net/npm/typescript@latest/lib',
+				tsdkUrl: './resources',
 			},
 			versions: configs.versions,
 			globalModules: configs.globalModules,

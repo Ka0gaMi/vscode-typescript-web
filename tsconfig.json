@@ -4,6 +4,7 @@
 		"lib": [
 			"WebWorker",
 			"ES2021",
+			"DOM"
 		],
 		"module": "Node16",
 		"strict": true,

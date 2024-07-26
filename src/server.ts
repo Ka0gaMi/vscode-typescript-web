@@ -1,10 +1,25 @@
-import { createNpmFileSystem } from '@volar/jsdelivr';
-import { createConnection, createServer, createTypeScriptProject, Disposable, LanguagePlugin, loadTsdkByUrl } from '@volar/language-server/browser';
-import { createParsedCommandLine, createVueLanguagePlugin, FileMap, getFullLanguageServicePlugins, resolveVueCompilerOptions, VueCompilerOptions } from '@vue/language-service';
+import {createNpmFileSystem} from './ataSys';
+import {
+	createConnection,
+	createServer,
+	createTypeScriptProject,
+	Disposable,
+	LanguagePlugin,
+	loadTsdkByUrl
+} from '@volar/language-server/browser';
+import {
+	createParsedCommandLine,
+	createVueLanguagePlugin,
+	FileMap,
+	getFullLanguageServicePlugins,
+	resolveVueCompilerOptions,
+	VueCompilerOptions
+} from '@vue/language-service';
 import type * as ts from 'typescript';
-import { create as createTypeScriptServicePlugins } from 'volar-service-typescript';
-import { URI } from 'vscode-uri';
-import type { TypeScriptWebServerOptions } from './types';
+import {ModuleKind} from "typescript";
+import {create as createTypeScriptServicePlugins} from 'volar-service-typescript';
+import {URI} from 'vscode-uri';
+import type {TypeScriptWebServerOptions} from './types';
 
 const connection = createConnection();
 const server = createServer(connection);
@@ -37,6 +52,7 @@ connection.onInitialize(async params => {
 		createTypeScriptProject(
 			tsdk.typescript,
 			tsdk.diagnosticMessages,
+			// @ts-ignore
 			async ({ env, uriConverter, projectHost, sys, configFileName }) => {
 				const { asFileName, asUri } = uriConverter;
 				const workspaceFolders = [...server.workspaceFolders.keys()];
@@ -97,6 +113,7 @@ connection.onInitialize(async params => {
 						}
 						return fs?.readDirectory(uri) ?? []
 					},
+					// @ts-ignore
 					readFile(uri) {
 						if (getCdnPath(uri) !== undefined) {
 							return ataSys.readFile(uri);
@@ -128,7 +145,16 @@ connection.onInitialize(async params => {
 						vueCompilerOptions = commandLine.vueOptions;
 					}
 					else {
-						compilerOptions = tsdk.typescript.getDefaultCompilerOptions();
+						compilerOptions = {
+							...tsdk.typescript.getDefaultCompilerOptions(),
+							jsx: 1,
+							allowJs: true,
+							checkJs: true,
+							moduleResolution: 2,
+							module: ModuleKind.ESNext,
+							target: 99,
+							lib: ['ESNext', 'DOM'],
+						};
 						vueCompilerOptions = resolveVueCompilerOptions({});
 					}
 					plugins.push(
@@ -183,9 +209,9 @@ connection.onInitialized(server.initialized);
 
 connection.onShutdown(server.shutdown);
 
-connection.onRequest('$/cdnFileContent', async (uri: string) => {
-	return ataSys.readFile(URI.parse(uri));
-});
+// connection.onRequest('$/cdnFileContent', async (uri: string) => {
+// 	return ataSys.readFile(URI.parse(uri));
+// });
 
 connection.listen();
 
@@ -231,3 +257,5 @@ function createGlobalEnvPlugin(globalModules: string[]): LanguagePlugin<URI> {
 		},
 	};
 }
+
+
