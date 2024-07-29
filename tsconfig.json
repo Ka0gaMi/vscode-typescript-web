@@ -13,8 +13,9 @@
 		"noUnusedParameters": true,
 		"esModuleInterop": false,
 		"noEmit": true,
+		"resolveJsonModule": true
 	},
 	"include": [
-		"src",
-	],
+		"src"
+	]
 }

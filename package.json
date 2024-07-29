@@ -73,13 +73,14 @@
 	"scripts": {
 		"build": "node scripts/build",
 		"watch": "npm run build -- --watch",
-		"pack": "npm run build && vsce package --no-dependencies",
+		"pack": "npm run build && vsce package",
 		"release": "npm run build && vsce publish --no-dependencies --target web",
 		"pre-release": "npm run build && vsce publish --no-dependencies --target web --pre-release",
 		"chrome": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ../volar-starter"
 	},
 	"devDependencies": {
 		"@types/vscode": "^1.82.0",
+		"@types/node": "^22.0.0",
 		"@volar/jsdelivr": "~2.4.0-alpha.12",
 		"@volar/language-server": "~2.4.0-alpha.12",
 		"@volar/vscode": "~2.4.0-alpha.12",

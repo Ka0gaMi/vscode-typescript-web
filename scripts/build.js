@@ -1,3 +1,4 @@
+const fs = require('fs');
 Promise.all([
 	require('esbuild').context({
 		entryPoints: {
@@ -37,6 +38,14 @@ Promise.all([
 	}),
 ]).then(async ctxs => {
 	console.log('building...');
+	const srcResourcesFolder = './src/resources';
+	const distResourcesFolder = './dist/resources';
+	try {
+		await fs.cp(srcResourcesFolder, distResourcesFolder, { recursive: true }, () => {});
+	} catch (err) {
+		console.error(err);
+	}
+	
 	if (process.argv.includes('--watch')) {
 		await Promise.all(ctxs.map(ctx => ctx.watch()));
 		console.log('watching...');

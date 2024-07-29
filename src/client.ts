@@ -23,7 +23,7 @@ export async function activate(context: vscode.ExtensionContext) {
 		documentSelector,
 		initializationOptions: {
 			typescript: {
-				tsdkUrl: './resources',
+				tsdkUrl: './',
 			},
 			versions: configs.versions,
 			globalModules: configs.globalModules,

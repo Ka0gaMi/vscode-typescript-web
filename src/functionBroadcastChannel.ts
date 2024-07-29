@@ -70,12 +70,12 @@ export default class FunctionBroadcastChannel {
                 promiseRes = res;
                 promiseRej = rej;
             });
-            const timeoutDebounce = window.setTimeout(() => {
+            const timeoutDebounce = setTimeout(() => {
                 delete this._callbacks[uid];
                 promiseRej(new Error('Broadcast Channel timeout'));
             }, timeout);
             this._callbacks[uid] = (success?: boolean, result?: string) => {
-                window.clearTimeout(timeoutDebounce);
+                clearTimeout(timeoutDebounce);
                 delete this._callbacks[uid];
                 if (!success) {
                     promiseRej(new Error(result ?? 'Recieved failed status'));
@@ -114,7 +114,7 @@ export default class FunctionBroadcastChannel {
                         success: true,
                         meta: {
                             uid: messageObject.meta.uid,
-                            broadcaster: window.location.href
+                            broadcaster: location.href
                         }
                     } as FunctionBroadcastMessage;
                     this._broadcastChannel?.postMessage(JSON.stringify(responseObject));
@@ -127,7 +127,7 @@ export default class FunctionBroadcastChannel {
                         success: false,
                         meta: {
                             uid: messageObject.meta.uid,
-                            broadcaster: window.location.href
+                            broadcaster: location.href
                         }
                     } as FunctionBroadcastMessage;
                     this._broadcastChannel?.postMessage(JSON.stringify(responseObject));

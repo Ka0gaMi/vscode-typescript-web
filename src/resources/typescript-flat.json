@@ -1,0 +1,725 @@
+{
+  "default": "/lib/typescript.min.js",
+  "files": [
+    {
+      "name": "/bin/tsc",
+      "hash": "jV+lvYg/7Al5/CAE8f4dma70BXAVXVUOrcCwO1VRO/A=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 45
+    },
+    {
+      "name": "/bin/tsserver",
+      "hash": "oIjww0Gbyy97hgrULkyfJerQZ+2nCvahDQp9RTlUqto=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 50
+    },
+    {
+      "name": "/lib/cancellationToken.js",
+      "hash": "PPjXt1ayZS1qzjXL+q2gymdJP2/n0PMd0V3pEtbpyOk=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 3714
+    },
+    {
+      "name": "/lib/cs/diagnosticMessages.generated.json",
+      "hash": "u/LgbDgWHWlKMEJlXKDzGvnaBZYzPyg2ZrQJp4rSze4=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 278627
+    },
+    {
+      "name": "/lib/de/diagnosticMessages.generated.json",
+      "hash": "cj0iljcelMqFW1H9i+m04dDsgotSmpAK2yscPifC6B0=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 301679
+    },
+    {
+      "name": "/lib/es/diagnosticMessages.generated.json",
+      "hash": "nvDyKFji6SqWij4oR2yhvmrUvQ2M5W9chkJRJ0jyq4A=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 298127
+    },
+    {
+      "name": "/lib/fr/diagnosticMessages.generated.json",
+      "hash": "Iv052XqNL57xXrVHrNd849XV/yM+KrCbOSkypg0qZ0I=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 301315
+    },
+    {
+      "name": "/lib/it/diagnosticMessages.generated.json",
+      "hash": "QeXBhDo3odkKaJbYyy3R8THDhOn2IsGp/1+j6nEgFe0=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 297888
+    },
+    {
+      "name": "/lib/ja/diagnosticMessages.generated.json",
+      "hash": "zPCtgm9kEtSLxeRqrenGA2aV/51RdmHdtVH6k9I5RiQ=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 335461
+    },
+    {
+      "name": "/lib/ko/diagnosticMessages.generated.json",
+      "hash": "tv2m94IptkJs21G2uKOAOufJWY9z4Kmwuz7cL4XP+Wo=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 303461
+    },
+    {
+      "name": "/lib/lib.d.ts",
+      "hash": "pyl/+Df83xdKlSSSWWZCnrjl/uzCzFXMBldOawksHqo=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 992
+    },
+    {
+      "name": "/lib/lib.decorators.d.ts",
+      "hash": "MzWEQmmLtWUTD1K6eb/T1NSErIX+M/PLF1nFTRggE5M=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 13194
+    },
+    {
+      "name": "/lib/lib.decorators.legacy.d.ts",
+      "hash": "eC3sOASbktToXBWF++pUdKIZxphKNbAEljsAvrGqtTg=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1326
+    },
+    {
+      "name": "/lib/lib.dom.asynciterable.d.ts",
+      "hash": "DJ5ER93KEOgJenNs5BuzesM4nt5G5BnueMEWGhTp6Lo=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1443
+    },
+    {
+      "name": "/lib/lib.dom.d.ts",
+      "hash": "Svawxye3oolkY9US+v0jY0Iprfaax8AOKuFaCcsIT60=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1326113
+    },
+    {
+      "name": "/lib/lib.dom.iterable.d.ts",
+      "hash": "nACkgIJUCLaiTGPBtxNiIyknJHWV18l2Wbwk3GiuB1c=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 25629
+    },
+    {
+      "name": "/lib/lib.es5.d.ts",
+      "hash": "ROWE1PZET1h5F4Tx1TCHWXCZMSlEKoR1l9twKgc8pow=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 215038
+    },
+    {
+      "name": "/lib/lib.es6.d.ts",
+      "hash": "3wOaZ1Nv4qzDr/3L+2RYkvhC2zb+WZ6OZS4vDGQKkNE=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1032
+    },
+    {
+      "name": "/lib/lib.es2015.collection.d.ts",
+      "hash": "3C3yCxvNyMLTSvSSbiw6sV/+EWCmPli34Jgz9hbv/0Q=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 5229
+    },
+    {
+      "name": "/lib/lib.es2015.core.d.ts",
+      "hash": "aSDhRIaAdnSYoLd8agCo530U1iw9qJZ7Fx8d3/o8GOQ=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 22524
+    },
+    {
+      "name": "/lib/lib.es2015.d.ts",
+      "hash": "RberWA3so0rpcp6XwTz9mZ3wRBankRbDv7SDgE+F3tQ=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1241
+    },
+    {
+      "name": "/lib/lib.es2015.generator.d.ts",
+      "hash": "REPmizXzMy91PqzGagSsHSBTuLA1oOCsHUVTkrXiQ7M=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 2552
+    },
+    {
+      "name": "/lib/lib.es2015.iterable.d.ts",
+      "hash": "vEdoVkEIfAFZcqPwckgIifDWxlUV8SvYUiL0mpiVLtc=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 14894
+    },
+    {
+      "name": "/lib/lib.es2015.promise.d.ts",
+      "hash": "DcHnztqbi5tFXDotZ7BBL+qwC9L2ZlbNiFDogxsItTc=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 3200
+    },
+    {
+      "name": "/lib/lib.es2015.proxy.d.ts",
+      "hash": "zmkfueXGTvuVRwg+SjQJG8vlvbQQJ+MQ67qPfZaphnE=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 5251
+    },
+    {
+      "name": "/lib/lib.es2015.reflect.d.ts",
+      "hash": "jWl6KpKaX8s4t6ZVlAIPzvBewWMIBKM3SIKcX/U2QNA=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 6493
+    },
+    {
+      "name": "/lib/lib.es2015.symbol.d.ts",
+      "hash": "T/KjU6v4qA7jma9XLeu4+qstM604xLRHTP9/JudlO40=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1649
+    },
+    {
+      "name": "/lib/lib.es2015.symbol.wellknown.d.ts",
+      "hash": "k0lf8nuHRvVdGfy826zMmf2V8Z0Feu0b0sDK/hM1+/A=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 10623
+    },
+    {
+      "name": "/lib/lib.es2016.array.include.d.ts",
+      "hash": "b8I7uMOWWWS+jFlzEKKHi1OgMG7bcdS1pN/nYBhrzAE=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 4862
+    },
+    {
+      "name": "/lib/lib.es2016.d.ts",
+      "hash": "P6yvBfDF/FacVkndNZiSyYqFVX4+DIR5ZMrrZwdvTXU=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 965
+    },
+    {
+      "name": "/lib/lib.es2016.full.d.ts",
+      "hash": "gH4OC9xnYF3Sjv4Y8gq1/NddlE75WTYSBwIzX5N5CUs=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1032
+    },
+    {
+      "name": "/lib/lib.es2016.intl.d.ts",
+      "hash": "6gEcdpY/sV7xzdfOamgItGMixSfeIHe2z98jrm9fnsc=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1490
+    },
+    {
+      "name": "/lib/lib.es2017.d.ts",
+      "hash": "mmjAwHri+nG0Q4SoObe42BZiojbUuawwkWcY91ELGy0=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1119
+    },
+    {
+      "name": "/lib/lib.es2017.date.d.ts",
+      "hash": "OPAhnJ4jyRXvl5CrHWgEQNlUGa0mSBb6FQCaiFHnkRk=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1916
+    },
+    {
+      "name": "/lib/lib.es2017.full.d.ts",
+      "hash": "HSQtXCTPKFyIvE+5PF/5A96DGQZOKCmG7etiR7oCjV4=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1032
+    },
+    {
+      "name": "/lib/lib.es2017.intl.d.ts",
+      "hash": "TeaA1btBwX9/aOBBlBLKI8mNV0ncquoYlhcvBkNYkfw=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1449
+    },
+    {
+      "name": "/lib/lib.es2017.object.d.ts",
+      "hash": "u0KneX2ZZBLs3Fsnh3IN5HcQOgsuUwWFaQaaDiuubH4=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 2457
+    },
+    {
+      "name": "/lib/lib.es2017.sharedmemory.d.ts",
+      "hash": "RzjyQgaH/YVinJ77RweTu3U3CcI3nl+FvBgV2HXOrc0=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 6227
+    },
+    {
+      "name": "/lib/lib.es2017.string.d.ts",
+      "hash": "LxH/eWkm4IMvmuFIAIE4rVg70YGJmrfddoomZnALGJM=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 2378
+    },
+    {
+      "name": "/lib/lib.es2017.typedarrays.d.ts",
+      "hash": "n8RkKfvgkaxa0mCMZXIB62i28bg0G9bWcAR9Mu0KiPo=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1425
+    },
+    {
+      "name": "/lib/lib.es2018.asyncgenerator.d.ts",
+      "hash": "YcN8HeZjz0Fx4RkkZuUsejgq+ljaAbHcdQWPAy3fCDk=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 2687
+    },
+    {
+      "name": "/lib/lib.es2018.asynciterable.d.ts",
+      "hash": "tUGoOKE/kjSrplCoJTk//CKS3A/IdoGl2B7wyW0oHno=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1754
+    },
+    {
+      "name": "/lib/lib.es2018.d.ts",
+      "hash": "XhxMNiBlprlf+VLA6rAQ8E3NLDSU6BO0k+z9T8ufwNg=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1088
+    },
+    {
+      "name": "/lib/lib.es2018.full.d.ts",
+      "hash": "lfECO4JMLFEcSPEgHi0RiLywyhE4owmocLlW0ukuRKs=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1074
+    },
+    {
+      "name": "/lib/lib.es2018.intl.d.ts",
+      "hash": "np+9cDDEQLM9Ah2hRdMjKYTIu3kW8nfo/9PcLj6uK9s=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 3021
+    },
+    {
+      "name": "/lib/lib.es2018.promise.d.ts",
+      "hash": "gR7Hj3/vyrvaS/qTs+tn2a4Wbvlfm/+YnZZAYcv4Ggw=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1353
+    },
+    {
+      "name": "/lib/lib.es2018.regexp.d.ts",
+      "hash": "cXk3YWoXByCCFSou81HLUfmIAvtLL9q9MjmYQ4dZdMo=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1232
+    },
+    {
+      "name": "/lib/lib.es2019.array.d.ts",
+      "hash": "1+fZt7UOXyLJFbUlrMWkmnplhM+PYtBWnlV8XPxLKsI=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 3163
+    },
+    {
+      "name": "/lib/lib.es2019.d.ts",
+      "hash": "aNc7ShFUn5wLfTUtEOkeXcqPqjMiv7d7Zhg5xCsd3sc=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1071
+    },
+    {
+      "name": "/lib/lib.es2019.full.d.ts",
+      "hash": "CPaGHfhPupcZwU1a3DukC+nwxodjnmxN88BbkwG4/5Q=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1074
+    },
+    {
+      "name": "/lib/lib.es2019.intl.d.ts",
+      "hash": "dPf6LQJ9WzPrBHHI6CpshyFiIxgewxJHw1ej6OL93Fs=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 958
+    },
+    {
+      "name": "/lib/lib.es2019.object.d.ts",
+      "hash": "ccN/TJVD8x387Wx4QOBoxaWqy3uJERpDZLHVJ2uFJVc=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1473
+    },
+    {
+      "name": "/lib/lib.es2019.string.d.ts",
+      "hash": "V2cR4BbPTxgEZ2BD5qClQUJSVg61fen6zu4015eYyFA=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1528
+    },
+    {
+      "name": "/lib/lib.es2019.symbol.d.ts",
+      "hash": "icGxKBunuKlu/GdrEbJk3nqDdMXqHmYX8RiAoT/FbcY=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1006
+    },
+    {
+      "name": "/lib/lib.es2020.bigint.d.ts",
+      "hash": "rjfWzNFWCwIDq4jUaYc5OtqqeMkZ5RrPMvuCyGUC6Yw=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 35443
+    },
+    {
+      "name": "/lib/lib.es2020.d.ts",
+      "hash": "Xvzk/Dwp6oToko+XrewIbj3IdjZeCYLMhHmgeVSj79Q=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1201
+    },
+    {
+      "name": "/lib/lib.es2020.date.d.ts",
+      "hash": "BjYAZkUEYQ/j6ZtxehIj+LGQAIf6sLTK0UlqEUdE+N8=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 2956
+    },
+    {
+      "name": "/lib/lib.es2020.full.d.ts",
+      "hash": "EwXR52ykTjD7iyuAdfpSK4P2DAvPXUMmqdLPebU3JPg=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1074
+    },
+    {
+      "name": "/lib/lib.es2020.intl.d.ts",
+      "hash": "R5VT43eb59T2jp9AzbgtA45e91kgEBAEEHI87O0ioPc=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 22654
+    },
+    {
+      "name": "/lib/lib.es2020.number.d.ts",
+      "hash": "Nor5P3TJyTLt2ExYiD5zbJ49U87B/iTAsP9FH1Kc6rE=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1587
+    },
+    {
+      "name": "/lib/lib.es2020.promise.d.ts",
+      "hash": "k0AZ1+PIGVD5qEJtCTRYtl1a/yx8FREjPA/VuUHmCKs=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1803
+    },
+    {
+      "name": "/lib/lib.es2020.sharedmemory.d.ts",
+      "hash": "vxSkJtu/ECLRG9CNa45wmi6dJG8MbBAy87LtuakCrb4=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 4749
+    },
+    {
+      "name": "/lib/lib.es2020.string.d.ts",
+      "hash": "XgftOAnUggXVuYVkKlny66R8QCN0p8+ABraG95763L0=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 2468
+    },
+    {
+      "name": "/lib/lib.es2020.symbol.wellknown.d.ts",
+      "hash": "K3LVKLLi/jxXiJynuu9eE6VslXuUaQbQN2fGQvOGu8M=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1455
+    },
+    {
+      "name": "/lib/lib.es2021.d.ts",
+      "hash": "/uyxvkg+0zL61VWv+Fiv/ZCkirGbpycu4IRwTrcWdWk=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1036
+    },
+    {
+      "name": "/lib/lib.es2021.full.d.ts",
+      "hash": "SmbfOrXeXPzaEVOM/93Wf/ahdOADeI4nCRTB4CSEg88=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1074
+    },
+    {
+      "name": "/lib/lib.es2021.intl.d.ts",
+      "hash": "lW0nq96pZS6DaM4Cm7HguRdOlniic1KfQm30s9kKvWA=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 8347
+    },
+    {
+      "name": "/lib/lib.es2021.promise.d.ts",
+      "hash": "rz3UJM8mdCjzDM/DdvR6LAEUVGtVxE2MDx1X2EHijXQ=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 2262
+    },
+    {
+      "name": "/lib/lib.es2021.string.d.ts",
+      "hash": "mVwAWrkaSYRV6o37Y6qfg/oup5PD2Ko0S+ShZ40G05k=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1592
+    },
+    {
+      "name": "/lib/lib.es2021.weakref.d.ts",
+      "hash": "09ewS0UDP1c1HIQ09gtr4epxot/sLQoMPIO627Dj5pM=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 3122
+    },
+    {
+      "name": "/lib/lib.es2022.array.d.ts",
+      "hash": "T6btFOmKqAuR9huYBcZT7oKvNQLcIcnaUmjThXdyygU=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 4258
+    },
+    {
+      "name": "/lib/lib.es2022.d.ts",
+      "hash": "VRTlTxfW107O/txzxQTq3/3tp5x+ogXPn+vq0y1FxLw=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1152
+    },
+    {
+      "name": "/lib/lib.es2022.error.d.ts",
+      "hash": "5mM+Bdo/825touwXDQ0DzPM95Qyk3G9a7stXLO3RYvs=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 2339
+    },
+    {
+      "name": "/lib/lib.es2022.full.d.ts",
+      "hash": "PLrZobpEU0QwJu045Li+AYq7JlZfp8lEN2RjrZ3wfEE=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1074
+    },
+    {
+      "name": "/lib/lib.es2022.intl.d.ts",
+      "hash": "2GcIUiQdTG4D8ridZ0l6S77+KeyqWkROLBGpsF5vzMY=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 6069
+    },
+    {
+      "name": "/lib/lib.es2022.object.d.ts",
+      "hash": "hESveJgOOyC0kyT0oWujUCT+8+4Gmg62dhbqbKghxHo=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1085
+    },
+    {
+      "name": "/lib/lib.es2022.regexp.d.ts",
+      "hash": "tLZ7GpEYJCH135mZiMaQ8U2BO5hQtArNBu1EaR9nJ60=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1331
+    },
+    {
+      "name": "/lib/lib.es2022.sharedmemory.d.ts",
+      "hash": "yszFbHJxOWnhz+XD1E5bqxUVRNnSs3PX2+Wh5BZmUr4=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 2085
+    },
+    {
+      "name": "/lib/lib.es2022.string.d.ts",
+      "hash": "MofZ0IX71hjDlxlEtltL5XhZ9UFfSVszpq3JlO3S8AQ=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1155
+    },
+    {
+      "name": "/lib/lib.es2023.array.d.ts",
+      "hash": "nVQCUYCSiaBTSbcKtfS3uZ+SKvZqs8ObpWpHXc+V1f8=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 39642
+    },
+    {
+      "name": "/lib/lib.es2023.collection.d.ts",
+      "hash": "Q2qvQ3Vi8nbsLdvuLyze2sdmTB5MHSw2g53dWC7rPQo=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 900
+    },
+    {
+      "name": "/lib/lib.es2023.d.ts",
+      "hash": "J73DCg4yeDNmpavtqEG8InV8F5fehoG76B+8c17rHBA=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 999
+    },
+    {
+      "name": "/lib/lib.es2023.full.d.ts",
+      "hash": "eFkhYIMl+iRrRQ8Fsjj0s+1lnxCZryeM6eu8lBahPx0=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1074
+    },
+    {
+      "name": "/lib/lib.es2023.intl.d.ts",
+      "hash": "jjwG6gkhOL+fpeh0of28nVSAXQdL7h3jG5mhHi/sI50=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 2645
+    },
+    {
+      "name": "/lib/lib.esnext.array.d.ts",
+      "hash": "CxHzymaqMxJCAsgLcM0gMhnD1EYM/BZeBweqnscQ/FM=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1776
+    },
+    {
+      "name": "/lib/lib.esnext.collection.d.ts",
+      "hash": "aj9aASnMgM9DmrcRZDNNZJtHBZpPWvypAoI2JAfQyH8=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 4207
+    },
+    {
+      "name": "/lib/lib.esnext.d.ts",
+      "hash": "F+3AJqv3PFwt1QhlLWP2jsTv2dSFbjRpiQ0nWYIJ/rU=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1236
+    },
+    {
+      "name": "/lib/lib.esnext.decorators.d.ts",
+      "hash": "1LHSxR0Fj8IewmKf/3p2JJ3sLjbhKWDqBW4++JF0CA8=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1070
+    },
+    {
+      "name": "/lib/lib.esnext.disposable.d.ts",
+      "hash": "FbmKUzhk0yTl9XzTz8BXmyMd9YwcD2Bj6g/LE8PHT/k=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 6575
+    },
+    {
+      "name": "/lib/lib.esnext.full.d.ts",
+      "hash": "veMf1CPNk7Dv+XGXo/Zt98k+jAwzXL6xE7f/GsNcI/Q=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1074
+    },
+    {
+      "name": "/lib/lib.esnext.intl.d.ts",
+      "hash": "gRxx7uSqCsX3rfcTMjpcQbDPbE4XNno0+843nhK78KQ=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 893
+    },
+    {
+      "name": "/lib/lib.esnext.object.d.ts",
+      "hash": "L+9UlFoTCV/bm4T3BfK1mUWXZAxGr+ss54NS+rTLMnk=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1259
+    },
+    {
+      "name": "/lib/lib.esnext.promise.d.ts",
+      "hash": "rHfLPoxtNWV5PrkKg3PugDMUYxWj2+rTvejbXq9eXsY=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1389
+    },
+    {
+      "name": "/lib/lib.esnext.regexp.d.ts",
+      "hash": "VuTtWqtfWSCYAGapQJv69T5tIdP40CDBfk3lhNKWAK0=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1073
+    },
+    {
+      "name": "/lib/lib.esnext.string.d.ts",
+      "hash": "CmKCyIJ+S5qV9L9PXCBWc62jG5gvUFctJxA9+M64ATw=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1194
+    },
+    {
+      "name": "/lib/lib.scripthost.d.ts",
+      "hash": "zQNPSZxs3KcitgwEtbG3jgWEh6cIWo4Nb7UICZR+5XM=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 9451
+    },
+    {
+      "name": "/lib/lib.webworker.asynciterable.d.ts",
+      "hash": "i65pphTt+Skt+e6RAw0SDP4orBAxFR01cflCRdx7azA=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1443
+    },
+    {
+      "name": "/lib/lib.webworker.d.ts",
+      "hash": "etNC1NEmxikg3ig9/+iPXAb4G0lrtHYT31n0UGoe8HQ=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 447654
+    },
+    {
+      "name": "/lib/lib.webworker.importscripts.d.ts",
+      "hash": "gOGIl+WIS2cjSI1PVlIWfnu1Ak+UZ0MTTsxKpO5zH4k=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1041
+    },
+    {
+      "name": "/lib/lib.webworker.iterable.d.ts",
+      "hash": "PAFQiu14DAHGI6gBWxZodE9XO3ujFT9EMc9nuaTgJqw=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 19987
+    },
+    {
+      "name": "/lib/pl/diagnosticMessages.generated.json",
+      "hash": "2J+WOIvHwQK/76EfwQZxhJFtSYu51uBluaM4shWIpaQ=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 299660
+    },
+    {
+      "name": "/lib/pt-br/diagnosticMessages.generated.json",
+      "hash": "Kkpvtj0hgYOQxEcmEtuzhOQCCLaQhQ1GObDTfetzEOo=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 289023
+    },
+    {
+      "name": "/lib/ru/diagnosticMessages.generated.json",
+      "hash": "1QjAVGLvYC7JXxCR95KyH7M5ZAjbG5BcCigJMFhMSbE=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 389945
+    },
+    {
+      "name": "/lib/tr/diagnosticMessages.generated.json",
+      "hash": "I/b3X+roTRDDaA0bfufYpyoJt/TVn2/zWyGalReo6qU=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 289798
+    },
+    {
+      "name": "/lib/tsc.js",
+      "hash": "AG3KrGR3p6njQKwqkabppvbNaLaAxKr/cEgD7cqVadc=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 6031103
+    },
+    {
+      "name": "/lib/tsserver.js",
+      "hash": "M5wOhkOTbR5ZuWPIqhjQ1yuOZJYLKmTk2GDN0Tzy3gg=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 26131
+    },
+    {
+      "name": "/lib/tsserverlibrary.d.ts",
+      "hash": "c7FaC3z1xt+QdrlAjFzmgvEYE0U79UxUyyhPB1tSJM8=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 865
+    },
+    {
+      "name": "/lib/tsserverlibrary.js",
+      "hash": "fKm0ZN6ApTgtnM/tKyJDI7wCdMjeYb8EZOie6CRnfHY=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 1012
+    },
+    {
+      "name": "/lib/typescript.d.ts",
+      "hash": "jrFC2dDikiDFYilr2+1rLCKN+EWJzl0MdO18Mzwbps0=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 578801
+    },
+    {
+      "name": "/lib/typescript.js",
+      "hash": "9/8+J6r+XcyC0DB1demn3FsFOxQdoSO+yByFhTd2W1Y=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 8874208
+    },
+    {
+      "name": "/lib/typesMap.json",
+      "hash": "b3NcnI2OK01PhRAnOy+WmtlaEID/IGHwzyZCJf6N0Jw=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 17285
+    },
+    {
+      "name": "/lib/typingsInstaller.js",
+      "hash": "4vq80cN1Y61ZpfjZQP7V4EVdnQDq8SI6WMs7h0Wqpro=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 10892
+    },
+    {
+      "name": "/lib/watchGuard.js",
+      "hash": "RxIA1LxVXvjYQpNYvcoqaOp8m//2yFO1sEjSUS/kCSo=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 2313
+    },
+    {
+      "name": "/lib/zh-cn/diagnosticMessages.generated.json",
+      "hash": "qwFpo33z4j9z5RWKeWqq5NUy4QVTXD4WcSwaS0h8FB8=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 259410
+    },
+    {
+      "name": "/lib/zh-tw/diagnosticMessages.generated.json",
+      "hash": "qWZu0BGrfcwiK0R9PoUgWcaybfiYJZG4dRbFLOE/YnY=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 256190
+    },
+    {
+      "name": "/LICENSE.txt",
+      "hash": "p9AL/VRSW8aUtuMvZMfrz15reuNle+XMEnZ7znRlSkc=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 9197
+    },
+    {
+      "name": "/package.json",
+      "hash": "/nPUiBy5Pi4qCKoT8X3SmVggnAoatPYw6z66rdjVW50=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 3496
+    },
+    {
+      "name": "/README.md",
+      "hash": "6vrv/8fQw8aliJNQRWHW9olz/wgJYKWxPnZEGORb5mM=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 2848
+    },
+    {
+      "name": "/SECURITY.md",
+      "hash": "e2l27sQ+36aLeaRZ3QicVrejlZFtvxoBvRHm2G4SEo8=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 2656
+    },
+    {
+      "name": "/ThirdPartyNoticeText.txt",
+      "hash": "GvPGgDnFflOUItqCpPqtpQbObQ6m+Q4LaZ0C2823qQw=",
+      "time": "1985-10-26T08:15:00.000Z",
+      "size": 37824
+    }
+  ]
+}

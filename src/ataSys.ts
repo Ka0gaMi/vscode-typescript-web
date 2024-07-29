@@ -60,7 +60,7 @@ export function createNpmFileSystem(
     }
     
     async function _stat(path: string) {
-        const [modName, pkgName, pkgFilePath] = resolvePackageName(path);
+        const [modName, pkgName, _version, pkgFilePath] = resolvePackageName(path);
         if (!pkgName) {
             if (modName.startsWith('@')) {
                 return {
@@ -149,7 +149,7 @@ export function createNpmFileSystem(
                if ((await _stat(path))?.type !== 1 satisfies FileType.File) {
                    return;
                }
-               return await fetchText(pkgName);
+               return await fetchText(path);
            })()); 
         }
         
@@ -234,20 +234,35 @@ export function createNpmFileSystem(
         return [modName, pkgName, version, path];
     }
 
-    async function fetchText(pkgName: string) {
-        if (!textCache.has(pkgName)) {
-            textCache.set(pkgName, (async () => {
-                return await broadcast.execute('getTypes', pkgName);
-            })());
+    async function fetchText(path: string) {
+        if (!textCache.has(path)) {
+            if (path.startsWith('typescript/lib/')) {
+                textCache.set(path, (async () => {
+                    const redonePath = path.replace('typescript/lib/', '/');
+                    const res = await fetch( 'https://monaco-vscode-client.vercel.app' + '/assets/vscode-typescript-web-0.1.2.vsix' + redonePath);
+                    return await res.text();
+                })());
+            } else { 
+                textCache.set(path, (async () => {
+                    return await broadcast.execute('getTypes', path);
+                })());
+            }
         }
-        return await textCache.get(pkgName)!;
+        return await textCache.get(path)!;
     }
 
     async function fetchJson<T>(pkgName: string) {
         if (!jsonCache.has(pkgName)) {
-            jsonCache.set(pkgName, (async () => {
-                return await broadcast.execute('getTypesFlat', pkgName);
-            })());
+            if (pkgName === 'typescript') {
+                jsonCache.set(pkgName, (async () => {
+                    const res = await import('./resources/typescript-flat.json');
+                    return res.default;
+                })());
+            } else {
+                jsonCache.set(pkgName, (async () => {
+                    return await broadcast.execute('getTypesFlat', pkgName);
+                })());
+            }
         }
         return await jsonCache.get(pkgName)! as T;
     }
