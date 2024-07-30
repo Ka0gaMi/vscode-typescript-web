@@ -1,5 +1,5 @@
 $urlListFile = "./vueUrls.txt"
-$downloadFolder = "./resources/vue"
+$downloadFolder = "./resources"
 $vueVersion = "3.4.33"
 
 if (-not (Test-Path $urlListFile)) {
