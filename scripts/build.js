@@ -19,6 +19,7 @@ Promise.all([
 		sourcemap: true,
 		bundle: true,
 		outdir: './dist',
+		external: ['vscode'],
 		format: 'iife',
 		tsconfig: './tsconfig.json',
 		minify: process.argv.includes('--minify'),
@@ -40,8 +41,11 @@ Promise.all([
 	console.log('building...');
 	const srcResourcesFolder = './src/resources';
 	const distResourcesFolder = './dist/resources';
+	const srcVueResourcesFolder = '../scripts/resources/vue';
+	const distVueResourcesFolder = './dist/resources/vue';
 	try {
 		await fs.cp(srcResourcesFolder, distResourcesFolder, { recursive: true }, () => {});
+		await fs.cp(srcVueResourcesFolder, distVueResourcesFolder, { recursive: true }, () => {});
 	} catch (err) {
 		console.error(err);
 	}

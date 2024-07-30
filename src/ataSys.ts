@@ -1,6 +1,7 @@
 import type {FileSystem, FileType} from 'vscode';
 import type {URI} from 'vscode-uri';
 import FunctionBroadcastChannel from "./functionBroadcastChannel";
+import { getConfigs } from "./client";
 
 const textCache = new Map<string,  Promise<string | undefined>>();
 const jsonCache = new Map<string,  Promise<any>>();
@@ -8,6 +9,8 @@ const jsonCache = new Map<string,  Promise<any>>();
 const broadcast = new FunctionBroadcastChannel({
     id: 'Omega365-vscode-wrapper'
 });
+
+const config = getConfigs();
 
 export function createNpmFileSystem(
     getCdnPath = (uri: URI): string | undefined => {
@@ -238,8 +241,8 @@ export function createNpmFileSystem(
         if (!textCache.has(path)) {
             if (path.startsWith('typescript/lib/')) {
                 textCache.set(path, (async () => {
-                    const redonePath = path.replace('typescript/lib/', '/');
-                    const res = await fetch( 'https://monaco-vscode-client.vercel.app' + '/assets/vscode-typescript-web-0.1.2.vsix' + redonePath);
+                    const redonePath = path.replace('typescript/lib/', './');
+                    const res = await fetch(config.baseUrl + redonePath);
                     return await res.text();
                 })());
             } else { 
@@ -256,6 +259,11 @@ export function createNpmFileSystem(
             if (pkgName === 'typescript') {
                 jsonCache.set(pkgName, (async () => {
                     const res = await import('./resources/typescript-flat.json');
+                    return res.default;
+                })());
+            } else if (pkgName === 'vue') {
+                jsonCache.set(pkgName, (async () => {
+                    const res = await import('../scripts/resources/vue/vue-flat.json');
                     return res.default;
                 })());
             } else {

@@ -5,4 +5,5 @@ export interface TypeScriptWebServerOptions {
     versions?: Record<string, string>;
     globalModules?: string[];
     supportVue?: boolean;
+    baseUrl: string;
 }

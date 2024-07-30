@@ -23,11 +23,12 @@ export async function activate(context: vscode.ExtensionContext) {
 		documentSelector,
 		initializationOptions: {
 			typescript: {
-				tsdkUrl: './',
+				tsdkUrl: '.',
 			},
 			versions: configs.versions,
 			globalModules: configs.globalModules,
 			supportVue: configs.supportVue,
+			baseUrl: configs.baseUrl,
 		} satisfies TypeScriptWebServerOptions,
 	};
 	client = new lsp.LanguageClient(
@@ -59,12 +60,13 @@ export function deactivate() {
 	return client?.stop();
 }
 
-function getConfigs() {
+export function getConfigs() {
 	const configs = vscode.workspace.getConfiguration('typescript-web');
 	return {
 		// fix: Failed to execute 'postMessage' on 'Worker': #<Object> could not be cloned.
 		versions: JSON.parse(JSON.stringify(configs.get<Record<string, string>>('dts.versions'))),
 		globalModules: configs.get<string[]>('dts.globals'),
 		supportVue: configs.get<boolean>('supportVue') ?? false,
+		baseUrl: configs.get<string>('baseUrl') ?? '/',
 	};
 }
